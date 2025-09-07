@@ -21,11 +21,11 @@ This repository contains multiple responsive front-end web development projects 
 ## 📂 Folder Structure
 ```plaintext
 responsive-web-projects/
-├── vr-showcase-website/
+├── Food-dilivery-website/
 │   ├── index.html
 │   ├── style.css
 │   └── images/
-├── another-project/
+├── VR-project/ (comming soon)
 │   └── ...
 ├── README.md
 └── .gitignore
