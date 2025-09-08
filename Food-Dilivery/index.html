@@ -5,13 +5,13 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/4b6aa4f9ba.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">
           <img
@@ -28,25 +28,25 @@
               Why Choose Us?
               <span class="sr-only">(current)</span>
             </a>
+            <a class="nav-link" href="#exploreMenuSection" id="navItem2">Explore Menu</a>
             <a class="nav-link" href="#deliveryPaymentSection" id="navItem3">Delivery & Payment</a>
-            <a class="nav-link" href="#redeemSection" id="navItem2">Redeem</a>
             <a class="nav-link" href="#followUsSection" id="navItem4">Follow Us</a>
           </div>
         </div>
       </div>
     </nav>
 
-    <!-- HomePage -->
+    <!-- BannerSection -->
     <div class="banner-section-bg-container d-flex justify-content-center flex-column">
       <div class="text-center">
         <h1 class="banner-heading mb-3">Get Delicious Food Anytime</h1>
         <p class="banner-caption mb-4">Eat Smart & Healthy</p>
-        <button class="custom-button" onclick="display('exploreSection')">View Menu</button>
+        <button class="custom-button">View Menu</button>
         <button class="custom-outline-button">Order Now</button>
       </div>
     </div>
 
-    <!-- Why Choose us? -->
+    <!-- WhyChooseUsSection -->
     <div class="wcu-section pt-5 pb-5" id="wcuSection">
       <div class="container">
         <div class="row">
@@ -102,9 +102,9 @@
         </div>
       </div>
     </div>
-
-    <!-- Explore Menu -->
-    <div id="exploreSection" class="explore-menu-section pt-5 pb-5">
+   
+    <!-- ExploreMenuSection -->
+    <div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -135,24 +135,6 @@
                 class="menu-item-image w-100"
               />
               <h1 class="menu-card-title">Veg Starters</h1>
-              <a href="" class="menu-item-link">
-                View All
-                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
-                  <path
-                    fill-rule="evenodd"
-                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-3">
-            <div class="menu-item-card shadow p-3 mb-3">
-              <img
-                src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/em-soup-img.png"
-                class="menu-item-image w-100"
-              />
-              <h1 class="menu-card-title">Soups</h1>
               <a href="" class="menu-item-link">
                 View All
                 <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="#d0b200" xmlns="http://www.w3.org/2000/svg">
@@ -276,7 +258,7 @@
       </div>
     </div>
 
-    <!-- Healthy Food section -->
+    <!-- HealthyFoodSection -->
     <div class="healthy-food-section pt-5 pb-5">
       <div class="container">
         <div class="row">
@@ -304,7 +286,7 @@
       </div>
     </div>
 
-    <!-- Dilivery and payment section -->
+    <!-- Dilivery&PaymentSection -->
     <div class="delivery-and-payment-section pt-5 pb-5" id="deliveryPaymentSection">
       <div class="container">
         <div class="row">
@@ -351,7 +333,7 @@
       </div>
     </div>
 
-    <!-- Thanking section -->
+    <!-- ThankingSection -->
     <div class="thanking-customers-section pt-5 pb-5">
       <div class="container">
         <div class="row">
@@ -369,7 +351,34 @@
               />
             </div>
             <div>
-              <button class="custom-button">Redeem Gift</button>
+              <button type="button" class="custom-button" data-toggle="modal" data-target="#exampleModal">
+                Redeem Gift
+              </button>
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog mt-5">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title thanking-customers-section-modal-title" id="exampleModalLabel">
+                        Gift Voucher
+                      </h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img
+                        src="https://d2clawv67efefq.cloudfront.net/ccbp-responsive-website/gift-voucher-img.png"
+                        class="w-100"
+                      />
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div class="col-12 col-md-5 d-none d-md-block">
@@ -382,8 +391,8 @@
       </div>
     </div>
 
-    <!-- FollowUs -->
-   <div class="follow-us-section pt-5 pb-5" id="followUsSection">
+    <!-- FollowUsSection -->
+    <div class="follow-us-section pt-5 pb-5" id="followUsSection">
       <div class="container">
         <div class="row">
           <div class="col-12">
@@ -406,7 +415,7 @@
       </div>
     </div>
 
-    <!-- Footer -->
+    <!-- FooterSection -->
     <div class="footer-section pt-5 pb-5">
       <div class="container">
         <div class="row">
@@ -423,7 +432,6 @@
         </div>
       </div>
     </div>
-
     
   </body>
 </html>
