@@ -9,7 +9,7 @@ This repository contains multiple responsive front-end web development projects 
 2. **Food Delivery Website** *(Coming Soon)*  
    A responsive design showing food categories, offers, and order options.
 
-3. **Portfolio Website** *(Coming Soon)*  
+3. **Client Portfolio Website**  
    A personal portfolio template demonstrating responsive design techniques.
 
 ## ⚡ Technologies Used
@@ -25,7 +25,7 @@ responsive-web-projects/
 │   ├── index.html
 │   ├── style.css
 │   └── images/
-├── VR-project/ (comming soon)
+├── Client-portfolio
 │   └── ...
 ├── README.md
 └── .gitignore
